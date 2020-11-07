@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="css/datetimepicker.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.0/moment-with-locales.min.js"></script>
+    <script type="text/javascript" src="scripts/datetimepicker.js"></script>
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <title>Kingsland</title>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <script src="scripts/datetimepicker.js"></script>
+    <script src="scripts/frontEndFunction.js"></script>
+    <script>
+        document.addEventListener( 'DOMContentLoaded', function () {
+            new Splide( '.splide' ).mount();
+        } );
+    </script>
+    	<link href="css/notify-metro.css" rel="stylesheet" />
+        <script src="scripts/notify.js"></script>
+        <script src="scripts/notify-metro.js"></script>
+        <script type="text/javascript">
+            function notify(style) {
+                $.notify({
+                    title: 'FROGS ARE COOL',
+                }, {
+                    style: 'metro',
+                    className: style,
+                    autoHide: false,
+                    clickToHide: true
+                });
+            }
+        </script>
+    
+        <script src="scripts/jquery.min.js"></script>
+        <script src="scripts/jquery-sakura.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready( function () {
+            $('#picker').dateTimePicker({
+
+            });
+            $('#picker-no-time').dateTimePicker({ showTime: false, dateFormat: 'DD/MM/YYYY'});
+        })
+        </script>
+
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+    <style>
+        .splide_slide {
+            max-width:50%;
+            height:auto;
+        }
+        img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+      </style>
+    <!--Fonts-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="css/datetimepicker.css" rel="stylesheet">
+    <link href="css/jquery-sakura.css" rel="stylesheet">
+</head>
+
+<body>
+    <script>
+        $(function(){
+  $('body').sakura();
+});
+    </script>
+<nav>
+    <div>
+
+        <img src="images/Kingsland-Logo.png" width="300" alt="kingsland-logo">
+        <button>Enroll</button>
+    </div>
+
+    <div>
+        <ul>
+            <a name="anchorName" id='anchorName'></a>
+            <li><a href="#">ABOUT US <i class="fas fa-angle-down"></i></a></li>
+            <li><a href="#">TRAININGS <i class="fas fa-angle-down"></i></a></li>
+            <li><a href="#">JOBS</a></li>
+            <li><a href="#">PARTNERS</a></li>
+            <li><a href="#">FORUM</a></li>
+            <li><a href="#">BLOG <i class="fas fa-angle-down"></i></a></li>
+            <li><a href="#">CONTACTS</a></li>
+            <i class="fas fa-search"></i>
+
+            <img src="images/profile.jpg" alt="profile-photo">
+        </ul>
+    </div>
+</nav>
+
+<main>
+    
+    <section class="education">
+        <article>
+            
+            <div class="box-head">
+                <h3>MY COURSES</h3>
+            </div>
+            
+            <div class="box-body">
+                <ul>
+                    <li>
+                        <span>JS Applications - March 2019</span>
+                        <i class="fas fa-chevron-circle-right"></i>
+                    </li>
+                    <li>
+                        <span>Express - March 2019</span>
+                        <i class="fas fa-chevron-circle-right"></i>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="box-footer">
+                Total courses: 2
+            </div>
+        </article>
+
+        <article>
+            <div class="box-head">
+                <h3>UPCOMING COURSES</h3>
+            </div>
+
+            <div class="box-body">
+                <ul>
+                    <li>
+                        <span>JS Applications - March 2019</span>
+                        <i class="fas fa-chevron-circle-right"></i>
+                    </li>
+                    <li>
+                        <span>JS Essentials - April 2019</span>
+                        <i class="fas fa-chevron-circle-right"></i>
+                    </li>
+                    <li>
+                        <span>PB with JS - April 2019</span>
+                        <i class="fas fa-chevron-circle-right"></i>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="box-footer">
+                Total courses: 3
+            </div>
+        </article>
+        <article>
+            
+            <div class="box-head">
+                <h3>CONSULTATIONS</h3>
+                
+            </div>
+
+            <div class="box-body" id="consultBox">
+                <ul>
+                    <li>
+                        <span>Patrick - 04/25 - 02:50</span>
+                        <i class="fas fa-chevron-circle-right"></i>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="box-footer">
+                Total consultation: <span id="consultNum">1</span>
+            </div>
+            
+        </article>
+    </section>
+
+    <section class="slider">
+        <h1 style="text-align: center">
+            
+            <div class="splide">
+                <div class="splide__track">
+                    <div style="max-width:600px;" class="splide__list">
+                        <img src="images/frog1.png" class="splide__slide">
+                        <img src="images/frog2.png" class="splide__slide">
+                        <img src="images/frog3.png" class="splide__slide">
+                        <img src="images/frog4.png" class="splide__slide">
+                        <img src="images/frog5.png" class="splide__slide">
+                        <img src="images/frog6.png" class="splide__slide">
+                        <img src="images/frog1.png" class="splide__slide">
+                    </div>
+                  
+                </div>
+            </div>                  
+        </h1>
+    </section>
+    <section class="lecture-meeting">
+        <h2>
+            Book a meeting with your lecturer
+        </h2>
+        <section class="meeting-main">
+            <form>
+                <p><i class="fas fa-user"></i><input type="text" name="username" id="username" placeholder="Username"/></p>
+                <p>
+                    <i class="fas fa-graduation-cap"></i>
+                    <select style="text-indent: 35px" id="programSel">
+                        <option value="JS">JS Applications</option>
+                        <option value="JSCore">JS Core</option>
+                        <option value="JS Web">JS Web React</option>
+                        <option value="FE">Front End</option>
+                    </select>
+                </p>
+                <p>
+                    <i class="fas fa-male"></i>
+                    <select id="lecturer" style="text-indent: 35px">
+                        <option value="name">Patrick Golloway </option>
+                        <option value="Anar">Anar Mahmen</option>
+                        <option value="Simeon">Simeon Mandazhiev</option>
+                        <option value="Katoshki">Simeon Katoshki</option>
+                    </select>
+                </p>
+                <p id="dateArea">
+                    <i class="fas fa-hourglass-start"></i>
+                    <input id="picker" class="form-control" type="text" name="dateUp" placeholder="YYYY/DD/MM"/>
+                    <input type="hidden" id="result" value="" />
+                </p>
+            </form>
+            <div style="text-align: center;">
+            <button id="bookHourBtn" onclick=showTime()>Send</button>
+
+            </div>
+        </section>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="wrapper">
+        <section class="about">
+            <header>
+                <h3>KINGSLAND UNIVERSITY</h3>
+            </header>
+            <div class="ul">
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Curriculum</a></li>
+                    <li><a href="#">Certificates</a></li>
+                    <li><a href="#">Trainers</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Tuition fees</a></li>
+                    <li><a href="#">How to apply</a></li>
+                    <li><a href="#">Terms and conditions</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="initiatives">
+            <header>
+                <h3>ALL INITIATIVES</h3>
+            </header>
+            <ul>
+                <li><a href="#">Kingsland Innovation</a></li>
+                <li><a href="#">Kingsland Coders</a></li>
+                <li><a href="#">Kingsland Job Boards</a></li>
+                <li><a href="#">Kingsland Academy</a></li>
+            </ul>
+        </section>
+
+        <section class="partners">
+            <header>
+                <h3>MAIN PARTNERS</h3>
+            </header>
+            <div class="ul">
+                <ul>
+                    <li><a href="#">Technical Skills Accelarator</a></li>
+                    <li><a href="#">Good Money</a></li>
+                    <li><a href="#">Hosho</a></li>
+                    <li><a href="#">Ngee Ann Polytechnic</a></li>
+                    <li><a href="#">Netki</a></li>
+
+                </ul>
+                <ul>
+                    <li><a href="#">Paybook</a></li>
+                    <li><a href="#">Bitt</a></li>
+                    <li><a href="#">Word Blockchain Forum</a></li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</footer>
+
+</body>
+</html>
